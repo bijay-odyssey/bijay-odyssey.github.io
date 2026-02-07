@@ -5,57 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bijaya Kumar Pariyar - Data Scientist & AI Engineer specializing in RAG systems, LLMs, and production ML pipelines">
     <meta name="author" content="Bijaya Kumar Pariyar">
+    <meta name="theme-color" content="#0f172a">
     <title>Bijaya Kumar Pariyar | Data Scientist & AI Engineer</title>
     
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
     
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Font Awesome -->
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- AOS Animation Library -->
+    <!-- AOS Animation Library CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
-                <i class="fas fa-code me-2"></i>BKP
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="brand-icon">λ</span> BKP
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -63,44 +52,41 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
+        <div class="hero-background"></div>
         <div class="container">
             <div class="row align-items-center min-vh-100">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p class="text-primary mb-3" data-aos="fade-down">Data Scientist & AI Engineer</p>
-                    <h1 class="display-3 fw-bold mb-4" data-aos="fade-up" data-aos-delay="100">
-                        Bijaya Kumar Pariyar
-                    </h1>
-                    <p class="lead text-muted mb-4" data-aos="fade-up" data-aos-delay="200">
-                        Building intelligent systems through machine learning, NLP, and production-grade RAG architectures. 
-                        Transforming complex data into actionable insights.
-                    </p>
-                    <div class="d-flex gap-3 justify-content-center mb-5" data-aos="fade-up" data-aos-delay="300">
-                        <a href="#projects" class="btn btn-primary btn-lg">
-                            <i class="fas fa-folder-open me-2"></i>View Projects
-                        </a>
-                        <a href="#contact" class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-envelope me-2"></i>Contact Me
-                        </a>
-                    </div>
-                    
-                    <!-- Stats -->
-                    <div class="row g-4 mt-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="col-md-4">
-                            <div class="stat-box">
-                                <h3 class="fw-bold mb-0">20+</h3>
-                                <p class="text-muted mb-0">ML Projects</p>
-                            </div>
+                <div class="col-lg-10 mx-auto">
+                    <div class="hero-content">
+                        <p class="hero-tag" data-aos="fade-down">Data Scientist & AI Engineer</p>
+                        <h1 class="hero-title fw-bold" data-aos="fade-up" data-aos-delay="100">
+                            Bijaya Kumar Pariyar
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            Building production-grade AI systems | RAG pipelines | LLM integrations | Data science at scale
+                        </p>
+                        
+                        <div class="hero-actions mt-5" data-aos="fade-up" data-aos-delay="300">
+                            <a href="#projects" class="btn btn-primary btn-lg me-3 me-lg-4">
+                                <i class="fas fa-folder-open me-2"></i>View Projects
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-envelope me-2"></i>Contact Me
+                            </a>
                         </div>
-                        <div class="col-md-4">
-                            <div class="stat-box">
-                                <h3 class="fw-bold mb-0">1M+</h3>
-                                <p class="text-muted mb-0">Rows Processed</p>
+                        
+                        <!-- Quick Stats -->
+                        <div class="hero-stats mt-5 pt-4" data-aos="fade-up" data-aos-delay="400">
+                            <div class="stat-card">
+                                <h3 class="stat-number">20+</h3>
+                                <p class="stat-label">ML Projects</p>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="stat-box">
-                                <h3 class="fw-bold mb-0">65+</h3>
-                                <p class="text-muted mb-0">GitHub Repos</p>
+                            <div class="stat-card">
+                                <h3 class="stat-number">1M+</h3>
+                                <p class="stat-label">Rows Processed</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="stat-number">65+</h3>
+                                <p class="stat-label">GitHub Repos</p>
                             </div>
                         </div>
                     </div>
@@ -110,80 +96,66 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-6 bg-body">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="section-title text-center mb-5" data-aos="fade-up">
-                        <h2 class="fw-bold">About Me</h2>
-                        <div class="title-underline mx-auto"></div>
-                    </div>
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline mx-auto"></div>
+            </div>
+            
+            <div class="row g-4 g-lg-5 align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <h3 class="fw-bold mb-4">Self-taught Data Scientist</h3>
                     
-                    <div class="row g-4">
-                        <div class="col-lg-8" data-aos="fade-right">
-                            <p class="lead mb-4">
-                                Self-taught Data Scientist with hands-on experience building end-to-end ML solutions across 
-                                classification, regression, clustering, anomaly detection, and time series forecasting.
-                            </p>
-                            <p class="text-muted mb-4">
-                                Currently working as a Data Scientist Intern at <strong>CR Equity AI, Inc.</strong>, where I design and 
-                                implement production-grade RAG pipelines, integrate LLM APIs, and build FastAPI services for document 
-                                intelligence. My work spans from classical ML to cutting-edge AI systems, with a strong focus on 
-                                security, scalability, and real-world deployment.
-                            </p>
-                            <p class="text-muted mb-4">
-                                I've completed over 20 structured ML projects, handling large-scale datasets with 1M+ rows for fraud 
-                                detection and 1.7M+ rows for forecasting. My approach combines rigorous evaluation, model explainability 
-                                through SHAP, and reproducible research workflows.
-                            </p>
-                            
-                            <div class="row g-3 mt-4">
-                                <div class="col-sm-6">
-                                    <div class="info-item">
-                                        <i class="fas fa-graduation-cap text-primary me-2"></i>
-                                        <span><strong>Education:</strong> BCA, Tribhuvan University</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="info-item">
-                                        <i class="fas fa-map-marker-alt text-primary me-2"></i>
-                                        <span><strong>Location:</strong> Kathmandu, Nepal</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="info-item">
-                                        <i class="fas fa-briefcase text-primary me-2"></i>
-                                        <span><strong>Role:</strong> Data Scientist Intern</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="info-item">
-                                        <i class="fas fa-building text-primary me-2"></i>
-                                        <span><strong>Company:</strong> CR Equity AI, Inc.</span>
-                                    </div>
-                                </div>
-                            </div>
+                    <p class="text-muted mb-3 lh-lg">
+                        Self-taught Data Scientist with hands-on experience building end-to-end ML solutions across classification, regression, clustering, anomaly detection, and time series forecasting.
+                    </p>
+                    
+                    <p class="text-muted mb-3 lh-lg">
+                        Currently working as a Data Scientist Intern at <strong>CR Equity AI, Inc.</strong>, where I design and implement production-grade RAG pipelines, integrate LLM APIs, and build FastAPI services for document intelligence. My work spans from classical ML to cutting-edge AI systems, with a strong focus on security, scalability, and real-world deployment.
+                    </p>
+                    
+                    <p class="text-muted mb-3 lh-lg">
+                        I've completed over 20 structured ML projects, handling large-scale datasets with 1M+ rows for fraud detection and 1.7M+ rows for forecasting. My approach combines rigorous evaluation, model explainability through SHAP, and reproducible research workflows.
+                    </p>
+                    
+                    <div class="about-info mt-5">
+                        <div class="info-row">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span><strong>Education:</strong> BCA, Tribhuvan University</span>
                         </div>
-                        
-                        <div class="col-lg-4" data-aos="fade-left">
-                            <div class="card border-0 shadow-sm h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3">Quick Links</h5>
-                                    <div class="d-grid gap-2">
-                                        <a href="https://github.com/bijay-odyssey" target="_blank" class="btn btn-outline-dark">
-                                            <i class="fab fa-github me-2"></i>GitHub
-                                        </a>
-                                        <a href="https://www.linkedin.com/in/bijaya-kumar-pariyar-45329437a/" target="_blank" class="btn btn-outline-primary">
-                                            <i class="fab fa-linkedin me-2"></i>LinkedIn
-                                        </a>
-                                        <a href="https://www.kaggle.com/bijaybeezoe" target="_blank" class="btn btn-outline-info">
-                                            <i class="fab fa-kaggle me-2"></i>Kaggle
-                                        </a>
-                                        <a href="mailto:bijaybeezoe@gmail.com" class="btn btn-outline-danger">
-                                            <i class="fas fa-envelope me-2"></i>Email
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="info-row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><strong>Location:</strong> Kathmandu, Nepal</span>
+                        </div>
+                        <div class="info-row">
+                            <i class="fas fa-briefcase"></i>
+                            <span><strong>Role:</strong> Data Scientist Intern</span>
+                        </div>
+                        <div class="info-row">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Company:</strong> CR Equity AI, Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5" data-aos="fade-left">
+                    <div class="expertise-grid">
+                        <div class="expertise-card">
+                            <h5>Quick Links</h5>
+                            <div class="quick-links">
+                                <a href="https://github.com/bijay-odyssey" target="_blank" class="quick-link-btn">
+                                    <i class="fab fa-github me-2"></i>GitHub
+                                </a>
+                                <a href="https://www.linkedin.com/in/bijaya-kumar-pariyar-45329437a/" target="_blank" class="quick-link-btn">
+                                    <i class="fab fa-linkedin me-2"></i>LinkedIn
+                                </a>
+                                <a href="https://www.kaggle.com/bijaybeezoe" target="_blank" class="quick-link-btn">
+                                    <i class="fab fa-kaggle me-2"></i>Kaggle
+                                </a>
+                                <a href="mailto:bijay.pariyar@crequity.ai" class="quick-link-btn">
+                                    <i class="fas fa-envelope me-2"></i>Email
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -193,57 +165,49 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-5 bg-light">
+    <section id="experience" class="py-6 bg-light">
         <div class="container">
-            <div class="section-title text-center mb-5" data-aos="fade-up">
-                <h2 class="fw-bold">Experience</h2>
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Experience</h2>
                 <div class="title-underline mx-auto"></div>
             </div>
             
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="card border-0 shadow-sm" data-aos="fade-up">
-                        <div class="card-body p-4">
-                            <div class="d-flex justify-content-between align-items-start mb-3">
-                                <div>
-                                    <h4 class="fw-bold mb-1">Data Scientist Intern</h4>
-                                    <p class="text-primary mb-1">CR Equity AI, Inc.</p>
-                                    <p class="text-muted small">
-                                        <i class="fas fa-map-marker-alt me-1"></i>Remote (Tallahassee, Florida, United States)
-                                    </p>
-                                </div>
-                                <span class="badge bg-primary">Dec 2025 - Present</span>
+            <div class="row g-4">
+                <div class="col-lg-8 mx-auto">
+                    <!-- Experience Card 1 -->
+                    <div class="experience-card" data-aos="fade-up">
+                        <div class="exp-header">
+                            <div>
+                                <h4 class="fw-bold mb-1">Data Scientist Intern</h4>
+                                <p class="text-primary fw-500 mb-0">CR Equity AI, Inc.</p>
                             </div>
-                            
-                            <p class="mb-3">
-                                Contributing to LLM-based RAG systems and backend AI services for document intelligence. 
-                                Collaborating remotely with a US-based engineering team using Agile development practices.
-                            </p>
-                            
-                            <h6 class="fw-bold mb-3">Key Responsibilities & Achievements:</h6>
-                            <ul class="mb-3">
-                                <li>Designed and implemented end-to-end RAG pipelines including document chunking, embedding generation, vector retrieval, reranking, and prompt construction</li>
-                                <li>Integrated and managed LLM APIs with retry logic, timeout handling, prompt/token constraints, and response validation</li>
-                                <li>Built production-grade FastAPI services for document processing, querying, and AI inference</li>
-                                <li>Worked with vector databases (FAISS, Qdrant, PostgreSQL pgvector) for scalable semantic search</li>
-                                <li>Implemented asynchronous processing pipelines using Redis-backed job tracking and webhook-based callbacks</li>
-                                <li>Applied security best practices including JWT authentication, SSRF protection, rate limiting, CORS, and trusted host validation</li>
-                                <li>Containerized backend services using Docker and implemented structured logging, metrics collection, and observability</li>
-                                <li>Conducting research on SOC practices and security hardening for production AI and backend systems</li>
-                            </ul>
-                            
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-secondary">Python</span>
-                                <span class="badge bg-secondary">FastAPI</span>
-                                <span class="badge bg-secondary">RAG</span>
-                                <span class="badge bg-secondary">LLMs</span>
-                                <span class="badge bg-secondary">FAISS</span>
-                                <span class="badge bg-secondary">Qdrant</span>
-                                <span class="badge bg-secondary">Docker</span>
-                                <span class="badge bg-secondary">Redis</span>
-                                <span class="badge bg-secondary">PostgreSQL</span>
-                                <span class="badge bg-secondary">JWT</span>
-                            </div>
+                            <span class="exp-badge">Dec 2025 - Present</span>
+                        </div>
+                        <p class="text-muted small mb-3">Remote (Tallahassee, Florida, United States)</p>
+                        <p class="mb-3">
+                            Contributing to LLM-based RAG systems and backend AI services for document intelligence. Collaborating remotely with a US-based engineering team using Agile development practices.
+                        </p>
+                        <h6 class="fw-bold mb-3">Key Responsibilities & Achievements:</h6>
+                        <ul class="exp-list">
+                            <li>Designed and implemented end-to-end RAG pipelines including document chunking, embedding generation, vector retrieval, reranking, and prompt construction</li>
+                            <li>Integrated and managed LLM APIs with retry logic, timeout handling, prompt/token constraints, and response validation</li>
+                            <li>Built production-grade FastAPI services for document processing, querying, and AI inference</li>
+                            <li>Worked with vector databases (FAISS, Qdrant, PostgreSQL pgvector) for scalable semantic search</li>
+                            <li>Implemented asynchronous processing pipelines using Redis-backed job tracking and webhook-based callbacks</li>
+                            <li>Applied security best practices including JWT authentication, SSRF protection, rate limiting, CORS, and trusted host validation</li>
+                            <li>Containerized backend services using Docker and implemented structured logging, metrics collection, and observability</li>
+                        </ul>
+                        <div class="exp-badges">
+                            <span class="badge bg-secondary">Python</span>
+                            <span class="badge bg-secondary">FastAPI</span>
+                            <span class="badge bg-secondary">RAG</span>
+                            <span class="badge bg-secondary">LLMs</span>
+                            <span class="badge bg-secondary">FAISS</span>
+                            <span class="badge bg-secondary">Qdrant</span>
+                            <span class="badge bg-secondary">Docker</span>
+                            <span class="badge bg-secondary">Redis</span>
+                            <span class="badge bg-secondary">PostgreSQL</span>
+                            <span class="badge bg-secondary">JWT</span>
                         </div>
                     </div>
                 </div>
@@ -252,212 +216,197 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5">
+    <section id="projects" class="py-6 bg-body">
         <div class="container">
-            <div class="section-title text-center mb-5" data-aos="fade-up">
-                <h2 class="fw-bold">Featured Projects</h2>
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
                 <div class="title-underline mx-auto"></div>
                 <p class="text-muted mt-3">A selection of my recent work in ML, AI, and data science</p>
             </div>
             
             <div class="row g-4">
-                <!-- Project 1 - Featured -->
+                <!-- Featured Project - Full Width -->
                 <div class="col-lg-12" data-aos="fade-up">
-                    <div class="card project-card border-0 shadow-sm h-100 featured-project">
+                    <div class="project-card project-featured">
                         <div class="ribbon">Featured</div>
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="project-icon me-3">
-                                    <i class="fas fa-robot"></i>
-                                </div>
-                                <div>
-                                    <h4 class="fw-bold mb-1">Personal Knowledge Base RAG API</h4>
-                                    <p class="text-muted small mb-0">FastAPI • FAISS • Qdrant • Groq • LLMs</p>
-                                </div>
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="project-icon">
+                                <i class="fas fa-robot"></i>
                             </div>
-                            <p class="mb-3">
-                                Modular RAG API built from scratch with FastAPI for document upload and natural language querying. 
-                                Features switchable vector backends (FAISS/Qdrant), multiple chunking strategies, cross-encoder 
-                                reranking, and Groq-powered generation with Llama-3.3-70B.
-                            </p>
-                            <ul class="small mb-3">
-                                <li>FastAPI endpoints for TXT/PDF ingestion and semantic querying</li>
-                                <li>Configurable chunking strategies (fixed-size, sentence, recursive)</li>
-                                <li>Thread-safe writes with metadata filtering</li>
-                                <li>Low-latency responses with sentence-transformers embeddings</li>
-                            </ul>
-                            <a href="https://github.com/bijay-odyssey/Personal-Knowledge-Base-RAG-API" target="_blank" class="btn btn-sm btn-primary">
-                                <i class="fab fa-github me-1"></i>View on GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card project-card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="project-icon me-3">
-                                    <i class="fas fa-search"></i>
-                                </div>
-                                <h5 class="fw-bold mb-0">RAG Precision Enhancement</h5>
+                            <div class="flex-grow-1">
+                                <h4 class="fw-bold mb-1">Personal Knowledge Base RAG API</h4>
+                                <p class="text-muted small mb-0">FastAPI • FAISS • Qdrant • Groq • LLMs</p>
                             </div>
-                            <p class="text-muted small mb-3">FAISS • Cross-Encoder • Reranking</p>
-                            <p class="mb-3">
-                                Comparative study demonstrating why retrieval alone isn't enough. Built two-stage retrieval + 
-                                reranking pipeline with noise injection to stress-test semantic search performance.
-                            </p>
-                            <ul class="small mb-3">
-                                <li>Noise injection with 20+ hard-negative documents</li>
-                                <li>Cross-encoder reranking (BAAI/bge-reranker-base)</li>
-                                <li>Evaluated via Hit Rate@k and MRR metrics</li>
-                            </ul>
-                            <a href="https://github.com/bijay-odyssey/retrieval-vs-reranking" target="_blank" class="btn btn-sm btn-outline-primary">
-                                <i class="fab fa-github me-1"></i>GitHub
-                            </a>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card project-card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="project-icon me-3">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <h5 class="fw-bold mb-0">ChurnShield</h5>
-                            </div>
-                            <p class="text-muted small mb-3">Flask • Scikit-learn • SHAP • SQLite</p>
-                            <p class="mb-3">
-                                Flask web app for real-time churn prediction with authentication, admin dashboard, and CSV export. 
-                                Integrated Random Forest pipeline with SHAP explainability.
-                            </p>
-                            <ul class="small mb-3">
-                                <li>Real-time prediction with Random Forest</li>
-                                <li>SHAP-based feature importance</li>
-                                <li>Automated retention strategy generator</li>
-                            </ul>
-                            <a href="https://github.com/bijay-odyssey/ChurnShield-App" target="_blank" class="btn btn-sm btn-outline-primary">
-                                <i class="fab fa-github me-1"></i>GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 4 -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card project-card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="project-icon me-3">
-                                    <i class="fas fa-credit-card"></i>
-                                </div>
-                                <h5 class="fw-bold mb-0">IEEE Fraud Detection</h5>
-                            </div>
-                            <p class="text-muted small mb-3">XGBoost • SHAP • Imbalanced Learning</p>
-                            <p class="mb-3">
-                                Transaction classification on 1M+ Kaggle IEEE-CIS records using XGBoost. Achieved ROC-AUC 0.95 
-                                and F1 0.66 on imbalanced fraud class.
-                            </p>
-                            <ul class="small mb-3">
-                                <li>Processed 1M+ transaction records</li>
-                                <li>Feature reduction via Spearman correlation</li>
-                                <li>Hyperparameter tuning with Optuna</li>
-                            </ul>
-                            <a href="https://github.com/bijay-odyssey/Classification" target="_blank" class="btn btn-sm btn-outline-primary">
-                                <i class="fab fa-github me-1"></i>GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 5 -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card project-card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="project-icon me-3">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <h5 class="fw-bold mb-0">Time Series Forecasting</h5>
-                            </div>
-                            <p class="text-muted small mb-3">LightGBM • Prophet • Feature Engineering</p>
-                            <p class="mb-3">
-                                SKU-level supermarket price forecasting on 1.7M+ rows using LightGBM and Prophet with lag, 
-                                rolling, and calendar features.
-                            </p>
-                            <ul class="small mb-3">
-                                <li>Processed 1.7M+ retail records</li>
-                                <li>TimeSeriesSplit cross-validation</li>
-                                <li>Evaluated via RMSE, MAPE, SMAPE</li>
-                            </ul>
-                            <a href="https://github.com/bijay-odyssey/Time-Series-Forecasting" target="_blank" class="btn btn-sm btn-outline-primary">
-                                <i class="fab fa-github me-1"></i>GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 6 -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card project-card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="project-icon me-3">
-                                    <i class="fas fa-dollar-sign"></i>
-                                </div>
-                                <h5 class="fw-bold mb-0">Retail Price Optimization</h5>
-                            </div>
-                            <p class="text-muted small mb-3">Random Forest • Optuna • SHAP</p>
-                            <p class="mb-3">
-                                Competition-aware ML workflow integrating historical sales and competitor pricing. Achieved R² ≈ 0.92 
-                                with Random Forest and SHAP explainability.
-                            </p>
-                            <ul class="small mb-3">
-                                <li>Full ML pipeline with EDA</li>
-                                <li>Hyperparameter tuning with Optuna</li>
-                                <li>Profit and revenue optimization</li>
-                            </ul>
-                            <a href="https://github.com/bijay-odyssey/price-optimization-refined" target="_blank" class="btn btn-sm btn-outline-primary">
-                                <i class="fab fa-github me-1"></i>GitHub
-                            </a>
-                        </div>
+                        <p class="mb-3">
+                            Modular RAG API built from scratch with FastAPI for document upload and natural language querying. Features switchable vector backends (FAISS/Qdrant), multiple chunking strategies, cross-encoder reranking, and Groq-powered generation with Llama-3.3-70B.
+                        </p>
+                        <ul class="small mb-3">
+                            <li>FastAPI endpoints for TXT/PDF ingestion and semantic querying</li>
+                            <li>Configurable chunking strategies (fixed-size, sentence, recursive)</li>
+                            <li>Thread-safe writes with metadata filtering</li>
+                            <li>Low-latency responses with sentence-transformers embeddings</li>
+                        </ul>
+                        <a href="https://github.com/bijay-odyssey/Personal-Knowledge-Base-RAG-API" target="_blank" class="btn btn-primary btn-sm">
+                            <i class="fab fa-github me-2"></i>View on GitHub
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 7 -->
+                <!-- Project Cards 2-7 -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="project-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">RAG Precision Enhancement</h5>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">FAISS • Cross-Encoder • Reranking</p>
+                        <p class="project-description mb-3">
+                            Comparative study demonstrating why retrieval alone isn't enough. Built two-stage retrieval + reranking pipeline with noise injection to stress-test semantic search performance.
+                        </p>
+                        <ul class="small mb-3">
+                            <li>Noise injection with 20+ hard-negative documents</li>
+                            <li>Cross-encoder reranking (BAAI/bge-reranker-base)</li>
+                            <li>Evaluated via Hit Rate@k and MRR metrics</li>
+                        </ul>
+                        <a href="https://github.com/bijay-odyssey/retrieval-vs-reranking" target="_blank" class="project-link">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card project-card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="project-icon me-3">
-                                    <i class="fas fa-exclamation-triangle"></i>
-                                </div>
+                    <div class="project-card">
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="project-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">ChurnShield</h5>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">Flask • Scikit-learn • SHAP • SQLite</p>
+                        <p class="project-description mb-3">
+                            Flask web app for real-time churn prediction with authentication, admin dashboard, and CSV export. Integrated Random Forest pipeline with SHAP explainability.
+                        </p>
+                        <ul class="small mb-3">
+                            <li>Real-time prediction with Random Forest</li>
+                            <li>SHAP-based feature importance</li>
+                            <li>Automated retention strategy generator</li>
+                        </ul>
+                        <a href="https://github.com/bijay-odyssey/ChurnShield-App" target="_blank" class="project-link">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="project-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">IEEE Fraud Detection</h5>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">XGBoost • SHAP • Imbalanced Learning</p>
+                        <p class="project-description mb-3">
+                            Transaction classification on 1M+ Kaggle IEEE-CIS records using XGBoost. Achieved ROC-AUC 0.95 and F1 0.66 on imbalanced fraud class.
+                        </p>
+                        <ul class="small mb-3">
+                            <li>Processed 1M+ transaction records</li>
+                            <li>Feature reduction via Spearman correlation</li>
+                            <li>Hyperparameter tuning with Optuna</li>
+                        </ul>
+                        <a href="https://github.com/bijay-odyssey/Classification" target="_blank" class="project-link">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="project-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Time Series Forecasting</h5>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">LightGBM • Prophet • Feature Engineering</p>
+                        <p class="project-description mb-3">
+                            SKU-level supermarket price forecasting on 1.7M+ rows using LightGBM and Prophet with lag, rolling, and calendar features.
+                        </p>
+                        <ul class="small mb-3">
+                            <li>Processed 1.7M+ retail records</li>
+                            <li>TimeSeriesSplit cross-validation</li>
+                            <li>Evaluated via RMSE, MAPE, SMAPE</li>
+                        </ul>
+                        <a href="https://github.com/bijay-odyssey/Time-Series-Forecasting" target="_blank" class="project-link">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="project-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Retail Price Optimization</h5>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">Random Forest • Optuna • SHAP</p>
+                        <p class="project-description mb-3">
+                            Competition-aware ML workflow integrating historical sales and competitor pricing. Achieved R² ≈ 0.92 with Random Forest and SHAP explainability.
+                        </p>
+                        <ul class="small mb-3">
+                            <li>Full ML pipeline with EDA</li>
+                            <li>Hyperparameter tuning with Optuna</li>
+                            <li>Profit and revenue optimization</li>
+                        </ul>
+                        <a href="https://github.com/bijay-odyssey/price-optimization-refined" target="_blank" class="project-link">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="project-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div>
                                 <h5 class="fw-bold mb-0">Anomaly Detection</h5>
                             </div>
-                            <p class="text-muted small mb-3">Isolation Forest • LOF • KMeans • DBSCAN</p>
-                            <p class="mb-3">
-                                Multi-method anomaly detection pipeline combining model-based, cluster-based, and statistical approaches 
-                                on fraud and retail datasets.
-                            </p>
-                            <ul class="small mb-3">
-                                <li>Multiple detection algorithms compared</li>
-                                <li>Evaluation via ROC-AUC and precision/recall</li>
-                                <li>PCA visualization of anomalies</li>
-                            </ul>
-                            <a href="https://github.com/bijay-odyssey/anomaly-detection" target="_blank" class="btn btn-sm btn-outline-primary">
-                                <i class="fab fa-github me-1"></i>GitHub
-                            </a>
                         </div>
+                        <p class="text-muted small mb-3">Isolation Forest • LOF • KMeans • DBSCAN</p>
+                        <p class="project-description mb-3">
+                            Multi-method anomaly detection pipeline combining model-based, cluster-based, and statistical approaches on fraud and retail datasets.
+                        </p>
+                        <ul class="small mb-3">
+                            <li>Multiple detection algorithms compared</li>
+                            <li>Evaluation via ROC-AUC and precision/recall</li>
+                            <li>PCA visualization of anomalies</li>
+                        </ul>
+                        <a href="https://github.com/bijay-odyssey/anomaly-detection" target="_blank" class="project-link">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
                     </div>
                 </div>
             </div>
             
-            <!-- More Projects -->
-            <div class="text-center mt-5" data-aos="fade-up">
+            <!-- More Projects Section -->
+            <div class="text-center mt-5 pt-4 border-top" data-aos="fade-up">
                 <h5 class="fw-bold mb-4">More Projects</h5>
                 <div class="d-flex flex-wrap gap-2 justify-content-center">
                     <a href="https://github.com/bijay-odyssey/Regression" target="_blank" class="btn btn-sm btn-outline-secondary">
@@ -484,126 +433,114 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light">
+    <section id="skills" class="py-6 bg-light">
         <div class="container">
-            <div class="section-title text-center mb-5" data-aos="fade-up">
-                <h2 class="fw-bold">Technical Skills</h2>
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Technical Skills</h2>
                 <div class="title-underline mx-auto"></div>
             </div>
             
             <div class="row g-4">
                 <!-- Programming -->
                 <div class="col-lg-6" data-aos="fade-up">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold mb-3">
-                                <i class="fas fa-code text-primary me-2"></i>Programming
-                            </h5>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-light text-dark">Python</span>
-                                <span class="badge bg-light text-dark">SQL</span>
-                                <span class="badge bg-light text-dark">Java</span>
-                                <span class="badge bg-light text-dark">JavaScript</span>
-                                <span class="badge bg-light text-dark">PHP</span>
-                            </div>
+                    <div class="skills-card">
+                        <h5 class="fw-bold mb-3">
+                            <i class="fas fa-code text-primary me-2"></i>Programming
+                        </h5>
+                        <div class="skills-grid">
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">SQL</span>
+                            <span class="skill-badge">Java</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">PHP</span>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Machine Learning -->
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold mb-3">
-                                <i class="fas fa-brain text-primary me-2"></i>Machine Learning
-                            </h5>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-light text-dark">Classification</span>
-                                <span class="badge bg-light text-dark">Regression</span>
-                                <span class="badge bg-light text-dark">Clustering</span>
-                                <span class="badge bg-light text-dark">Anomaly Detection</span>
-                                <span class="badge bg-light text-dark">Time Series</span>
-                                <span class="badge bg-light text-dark">Feature Engineering</span>
-                                <span class="badge bg-light text-dark">Hyperparameter Tuning</span>
-                                <span class="badge bg-light text-dark">SHAP</span>
-                            </div>
+                    <div class="skills-card">
+                        <h5 class="fw-bold mb-3">
+                            <i class="fas fa-brain text-primary me-2"></i>Machine Learning
+                        </h5>
+                        <div class="skills-grid">
+                            <span class="skill-badge">Classification</span>
+                            <span class="skill-badge">Regression</span>
+                            <span class="skill-badge">Clustering</span>
+                            <span class="skill-badge">Anomaly Detection</span>
+                            <span class="skill-badge">Time Series</span>
+                            <span class="skill-badge">Feature Engineering</span>
+                            <span class="skill-badge">Hyperparameter Tuning</span>
+                            <span class="skill-badge">SHAP</span>
                         </div>
                     </div>
                 </div>
                 
                 <!-- AI & NLP -->
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold mb-3">
-                                <i class="fas fa-robot text-primary me-2"></i>AI & NLP
-                            </h5>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-light text-dark">LLMs</span>
-                                <span class="badge bg-light text-dark">RAG Systems</span>
-                                <span class="badge bg-light text-dark">Vector Databases</span>
-                                <span class="badge bg-light text-dark">Embeddings</span>
-                                <span class="badge bg-light text-dark">Semantic Search</span>
-                                <span class="badge bg-light text-dark">Reranking</span>
-                            </div>
+                    <div class="skills-card">
+                        <h5 class="fw-bold mb-3">
+                            <i class="fas fa-robot text-primary me-2"></i>AI & NLP
+                        </h5>
+                        <div class="skills-grid">
+                            <span class="skill-badge">LLMs</span>
+                            <span class="skill-badge">RAG Systems</span>
+                            <span class="skill-badge">Vector Databases</span>
+                            <span class="skill-badge">Embeddings</span>
+                            <span class="skill-badge">Semantic Search</span>
+                            <span class="skill-badge">Reranking</span>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Frameworks & Libraries -->
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold mb-3">
-                                <i class="fas fa-book text-primary me-2"></i>Frameworks & Libraries
-                            </h5>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-light text-dark">Scikit-learn</span>
-                                <span class="badge bg-light text-dark">Pandas</span>
-                                <span class="badge bg-light text-dark">NumPy</span>
-                                <span class="badge bg-light text-dark">LightGBM</span>
-                                <span class="badge bg-light text-dark">XGBoost</span>
-                                <span class="badge bg-light text-dark">Prophet</span>
-                                <span class="badge bg-light text-dark">sentence-transformers</span>
-                            </div>
+                    <div class="skills-card">
+                        <h5 class="fw-bold mb-3">
+                            <i class="fas fa-book text-primary me-2"></i>Frameworks & Libraries
+                        </h5>
+                        <div class="skills-grid">
+                            <span class="skill-badge">Scikit-learn</span>
+                            <span class="skill-badge">Pandas</span>
+                            <span class="skill-badge">NumPy</span>
+                            <span class="skill-badge">LightGBM</span>
+                            <span class="skill-badge">XGBoost</span>
+                            <span class="skill-badge">Prophet</span>
+                            <span class="skill-badge">sentence-transformers</span>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Databases -->
-                <div class="col-lg-6" data-aos="fade-up">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold mb-3">
-                                <i class="fas fa-database text-primary me-2"></i>Databases & Vector Stores
-                            </h5>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-light text-dark">FAISS</span>
-                                <span class="badge bg-light text-dark">Qdrant</span>
-                                <span class="badge bg-light text-dark">PostgreSQL (pgvector)</span>
-                                <span class="badge bg-light text-dark">Redis</span>
-                                <span class="badge bg-light text-dark">SQLite</span>
-                                <span class="badge bg-light text-dark">MySQL</span>
-                            </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skills-card">
+                        <h5 class="fw-bold mb-3">
+                            <i class="fas fa-database text-primary me-2"></i>Databases & Vector Stores
+                        </h5>
+                        <div class="skills-grid">
+                            <span class="skill-badge">FAISS</span>
+                            <span class="skill-badge">Qdrant</span>
+                            <span class="skill-badge">PostgreSQL (pgvector)</span>
+                            <span class="skill-badge">Redis</span>
+                            <span class="skill-badge">SQLite</span>
+                            <span class="skill-badge">MySQL</span>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Deployment & DevOps -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold mb-3">
-                                <i class="fas fa-rocket text-primary me-2"></i>Deployment & DevOps
-                            </h5>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-light text-dark">FastAPI</span>
-                                <span class="badge bg-light text-dark">Flask</span>
-                                <span class="badge bg-light text-dark">Docker</span>
-                                <span class="badge bg-light text-dark">Git/GitHub</span>
-                                <span class="badge bg-light text-dark">JWT Auth</span>
-                                <span class="badge bg-light text-dark">Rate Limiting</span>
-                            </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skills-card">
+                        <h5 class="fw-bold mb-3">
+                            <i class="fas fa-rocket text-primary me-2"></i>Deployment & DevOps
+                        </h5>
+                        <div class="skills-grid">
+                            <span class="skill-badge">FastAPI</span>
+                            <span class="skill-badge">Flask</span>
+                            <span class="skill-badge">Docker</span>
+                            <span class="skill-badge">Git/GitHub</span>
+                            <span class="skill-badge">JWT Auth</span>
+                            <span class="skill-badge">Rate Limiting</span>
                         </div>
                     </div>
                 </div>
@@ -612,39 +549,32 @@
     </section>
 
     <!-- Research Section -->
-    <section class="py-5">
+    <section id="research" class="py-6 bg-body">
         <div class="container">
-            <div class="section-title text-center mb-5" data-aos="fade-up">
-                <h2 class="fw-bold">Research</h2>
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Research</h2>
                 <div class="title-underline mx-auto"></div>
             </div>
             
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="card border-0 shadow-sm" data-aos="fade-up">
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-start">
-                                <div class="me-3">
-                                    <i class="fas fa-file-alt fa-3x text-primary"></i>
-                                </div>
-                                <div>
-                                    <h5 class="fw-bold mb-2">
-                                        SHAP-Based Feature Selection and Iterative Hyperparameter Tuning for Customer Churn 
-                                        Prediction in Telecommunication Datasets
-                                    </h5>
-                                    <p class="text-muted small mb-3">Preprint • 2024</p>
-                                    <p class="mb-3">
-                                        Explores interpretability and optimization techniques for churn modeling, demonstrating 
-                                        SHAP values for transparent feature importance and iterative tuning for enhanced model 
-                                        performance on real-world telecom data.
-                                    </p>
-                                    <div class="d-flex flex-wrap gap-2">
-                                        <span class="badge bg-light text-dark">SHAP</span>
-                                        <span class="badge bg-light text-dark">Hyperparameter Tuning</span>
-                                        <span class="badge bg-light text-dark">Churn Prediction</span>
-                                        <span class="badge bg-light text-dark">Telecom</span>
-                                    </div>
-                                </div>
+                <div class="col-lg-8 mx-auto">
+                    <div class="research-card" data-aos="fade-up">
+                        <div class="research-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="research-content">
+                            <h4 class="fw-bold mb-2">
+                                SHAP-Based Feature Selection and Iterative Hyperparameter Tuning for Customer Churn Prediction in Telecommunication Datasets
+                            </h4>
+                            <p class="text-primary small fw-500 mb-3">Preprint • 2024</p>
+                            <p class="text-muted mb-3">
+                                Explores interpretability and optimization techniques for churn modeling, demonstrating SHAP values for transparent feature importance and iterative tuning for enhanced model performance on real-world telecom data.
+                            </p>
+                            <div class="research-tags">
+                                <span class="research-tag">SHAP</span>
+                                <span class="research-tag">Hyperparameter Tuning</span>
+                                <span class="research-tag">Churn Prediction</span>
+                                <span class="research-tag">Interpretability</span>
                             </div>
                         </div>
                     </div>
@@ -654,67 +584,66 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-6 bg-light">
         <div class="container">
-            <div class="section-title text-center mb-5" data-aos="fade-up">
-                <h2 class="fw-bold">Get In Touch</h2>
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
                 <div class="title-underline mx-auto"></div>
                 <p class="text-muted mt-3">
-                    I'm always interested in discussing new opportunities, collaborations, or innovative projects
+                    I'm interested in discussing opportunities, collaborations, and innovative projects
                 </p>
             </div>
             
-            <div class="row g-4">
+            <div class="row g-4 mb-5">
+                <!-- Email -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                    <div class="card border-0 shadow-sm text-center h-100">
-                        <div class="card-body p-4">
-                            <div class="contact-icon mb-3">
-                                <i class="fas fa-envelope fa-2x text-primary"></i>
-                            </div>
+                    <a href="mailto:bijay.pariyar@crequity.ai" class="contact-card text-decoration-none">
+                        <div class="contact-card-content">
+                            <i class="fas fa-envelope fa-2x mb-3"></i>
                             <h6 class="fw-bold mb-2">Email</h6>
-                            <p class="text-muted small mb-0">bijaybeezoe@gmail.com</p>
+                            <p class="text-muted small">bijay.pariyar@crequity.ai</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 
+                <!-- Phone -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card border-0 shadow-sm text-center h-100">
-                        <div class="card-body p-4">
-                            <div class="contact-icon mb-3">
-                                <i class="fas fa-phone fa-2x text-primary"></i>
-                            </div>
+                    <div class="contact-card">
+                        <div class="contact-card-content">
+                            <i class="fas fa-phone fa-2x mb-3"></i>
                             <h6 class="fw-bold mb-2">Phone</h6>
-                            <p class="text-muted small mb-0">+977-9767645335</p>
+                            <p class="text-muted small">+977-9767645335</p>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Location -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card border-0 shadow-sm text-center h-100">
-                        <div class="card-body p-4">
-                            <div class="contact-icon mb-3">
-                                <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
-                            </div>
+                    <div class="contact-card">
+                        <div class="contact-card-content">
+                            <i class="fas fa-map-marker-alt fa-2x mb-3"></i>
                             <h6 class="fw-bold mb-2">Location</h6>
-                            <p class="text-muted small mb-0">Kathmandu, Nepal</p>
+                            <p class="text-muted small">Kathmandu, Nepal</p>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="row mt-5">
+            <!-- Social Links -->
+            <div class="row mt-5 pt-4 border-top">
                 <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h6 class="text-muted text-uppercase small fw-bold mb-4">Connect with me</h6>
                     <div class="social-links">
-                        <a href="https://github.com/bijay-odyssey" target="_blank" class="btn btn-lg btn-outline-dark rounded-circle mx-2">
+                        <a href="https://github.com/bijay-odyssey" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/bijaya-kumar-pariyar-45329437a/" target="_blank" class="btn btn-lg btn-outline-primary rounded-circle mx-2">
+                        <a href="https://www.linkedin.com/in/bijaya-kumar-pariyar-45329437a/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://www.kaggle.com/bijaybeezoe" target="_blank" class="btn btn-lg btn-outline-info rounded-circle mx-2">
+                        <a href="https://www.kaggle.com/bijaybeezoe" target="_blank" rel="noopener noreferrer" class="social-link" title="Kaggle">
                             <i class="fab fa-kaggle"></i>
                         </a>
-                        <a href="mailto:bijaybeezoe@gmail.com" class="btn btn-lg btn-outline-danger rounded-circle mx-2">
+                        <a href="mailto:bijay.pariyar@crequity.ai" class="social-link" title="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
@@ -728,19 +657,19 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p class="mb-0">&copy; 2026 Bijaya Kumar Pariyar. All rights reserved.</p>
+                    <p class="mb-0">&copy; <span id="currentYear">2025</span> Bijaya Kumar Pariyar. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0 text-muted small">Built with passion for data science and AI</p>
+                    <p class="mb-0 text-muted small">Built for data science, AI, and machine learning excellence</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle -->
+    <!-- Bootstrap JS Bundle CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- AOS Animation Library -->
+    <!-- AOS JS CDN -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <!-- Custom JS -->
