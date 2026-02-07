@@ -1,9 +1,18 @@
 :root {
-    --primary-color: #0d6efd;
-    --secondary-color: #6c757d;
-    --dark-color: #212529;
-    --light-bg: #f8f9fa;
+    --primary-color: #2563eb;     
+    --primary-dark: #1e40af;      
+    --accent-color: #38bdf8;      
+    
+    --text-main: #0f172a;         
+    --text-muted: #475569;       
+    
+    --bg-main: #ffffff;
+    --bg-light: #f8fafc;          
+    --bg-dark: #020617;           
+    
+    --border-light: #e2e8f0;     
 }
+
 
 /* Box sizing */
 *,
